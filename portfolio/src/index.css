@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-paper font-body antialiased;
+}
+
+::selection {
+  background: #F2B84B;
+  color: #0B0F17;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+::-webkit-scrollbar-thumb {
+  background: #232A38;
+  border-radius: 8px;
+}
+
+/* Reveal-on-scroll utility, driven by IntersectionObserver toggling data-visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal[data-visible='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Card hover: light border + soft glow shadow, subject-appropriate (data/circuit tone) */
+.data-card {
+  border: 1px solid #232A38;
+  background: #11161F;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+.data-card:hover {
+  border-color: rgba(242, 184, 75, 0.55);
+  box-shadow: 0 0 0 1px rgba(242, 184, 75, 0.12), 0 18px 40px -18px rgba(62, 207, 176, 0.35);
+  transform: translateY(-4px);
+}
+
+/* focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #F2B84B;
+  outline-offset: 3px;
+}
