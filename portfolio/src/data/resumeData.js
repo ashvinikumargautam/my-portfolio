@@ -6,6 +6,7 @@ export const profile = {
   phone: '+91-7897622597',
   linkedin: 'https://linkedin.com',
   github: 'https://github.com',
+  portfolio: 'https://ashvinikumargautam.vercel.app/',
   summary:
     "Computer Science undergraduate specializing in Data Science, Machine Learning, and Generative AI with hands-on experience building end-to-end ML pipelines, RAG-based LLM applications, and AI-powered web tools. Proficient in Python, Scikit-Learn, TensorFlow, LangChain, and SQL with expertise in NLP, prompt engineering, and model deployment — seeking an ML/Data Science internship to contribute to data-driven product development.",
 }
@@ -109,6 +110,16 @@ export const projects = [
     ],
     links: [{ label: 'Live Demo', href: '#' }],
   },
+  {
+    title: 'WiSense — Wi-Fi Human Movement Sensing Platform',
+    stack: ['Python', 'FastAPI', 'React', 'TypeScript', 'Scikit-Learn', 'PostgreSQL'],
+    points: [
+      'Built a full-stack platform to detect human movement from Wi-Fi Channel State Information (CSI), with a FastAPI + WebSocket backend and a React/TypeScript dashboard for real-time visualization.',
+      'Implemented JWT-based authentication, an auto-trained Scikit-Learn model to classify movement states (no movement / movement / walking) from simulated and ESP32-based CSI signals, and PostgreSQL (via SQLAlchemy) for persistence.',
+      'Containerized the app with Docker Compose for one-command setup across backend, frontend, and database.',
+    ],
+    links: [{ label: 'GitHub', href: 'https://github.com/ashvinikumargautam/WiSense' }],
+  },
 ]
 
 export const education = {
@@ -126,6 +137,14 @@ export const education = {
 }
 
 export const certifications = [
-  { name: 'Data Science Professional Certification', issuer: 'CodeWithHarry', year: '2024' },
-  { name: 'Machine Learning Specialization', issuer: 'Kaggle', year: '2024' },
+  { name: 'Data Science Professional Certification', issuer: 'CodeWithHarry', year: '2026' },
+  { name: 'Machine Learning Specialization', issuer: 'Kaggle', year: '2026' },
+]
+
+export const achievements = [
+  {
+    name: '1st Position — Internal Hackathon for Smart India Hackathon (SIH) 2025',
+    detail: 'Team "Bridge Builders" (Problem ID 25017), Rajkiya Engineering College Sonbhadra',
+    year: '2025',
+  },
 ]
