@@ -146,7 +146,7 @@ export const certifications = [
 
 export const achievements = [
   {
-    name: '1st Position — Internal Hackathon for Smart India Hackathon (SIH) 2025',
+    name: '3rd Position — Internal Hackathon for Smart India Hackathon (SIH) 2025',
     detail: 'Team "Bridge Builders" (Problem ID 25017), Rajkiya Engineering College Sonbhadra',
     year: '2025',
   },
