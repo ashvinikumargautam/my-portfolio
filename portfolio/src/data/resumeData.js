@@ -118,7 +118,10 @@ export const projects = [
       'Implemented JWT-based authentication, an auto-trained Scikit-Learn model to classify movement states (no movement / movement / walking) from simulated and ESP32-based CSI signals, and PostgreSQL (via SQLAlchemy) for persistence.',
       'Containerized the app with Docker Compose for one-command setup across backend, frontend, and database.',
     ],
-    links: [{ label: 'GitHub', href: 'https://github.com/ashvinikumargautam/WiSense' }],
+    links: [
+      { label: 'Live Demo', href: 'https://wisense-frontend.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/ashvinikumargautam/WiSense' },
+    ],
   },
 ]
 
